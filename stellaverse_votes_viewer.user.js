@@ -4,7 +4,7 @@
 // @version      1.0.0
 // @description  スレッドページに経過時間と投票率を表示するだけ
 // @author       Frs1pw
-// @match        https://stellabms.xyz/thread/*
+// @match        https://stellabms.xyz/*
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
@@ -199,5 +199,7 @@
     }
   }).observe(document.body, { childList: true, subtree: true });
 
-  waitForCards();
+  if (/\/thread\/\d+/.test(location.pathname)) {
+    waitForCards();
+  }
 })();
