@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         StellaVerse votes viewer
 // @namespace    https://stellabms.xyz/
-// @version      1.0.0
+// @version      1.0.1
 // @description  スレッドページに経過時間と投票率を表示するだけ
 // @author       Frs1pw
 // @match        https://stellabms.xyz/*
